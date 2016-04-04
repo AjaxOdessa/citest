@@ -1,5 +1,6 @@
 #!/bin/sh
 
-
-composer update
-composer install
+if [ -s composer.json ]; then
+	composer update
+	composer install
+fi
